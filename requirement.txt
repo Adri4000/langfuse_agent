@@ -1,0 +1,6 @@
+langchain-openai
+langchain-community
+langchain
+langfuse
+langchain-core
+jinja2

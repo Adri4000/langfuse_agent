@@ -1,0 +1,30 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
+
+# Ignore compiled files
+*.so
+*.dll
+*.exe
+
+# Ignore log files
+*.log
+
+# Ignore datasets or large files
+data/books/
+data/chroma_db
+data/sale_database.db
+
+# Ignore Langfuse VM
+langfuse/

@@ -1,0 +1,31 @@
+[TASK]
+Task: Scoring
+Your goal is to give scores on the answer procured in the 'model_output', based on what is said 
+in the 'question'. The 'expected_answer' is the reference answer to the 'question'.
+[/TASK]
+
+
+[CRITERIA]
+There are 3 criteria to evaluate independently, all compared to the 'expected_answer':
+1. Accuracy: Assesses whether the information in 'model_output' is factually consistent and free of misleading statements.
+2. Clarity: Measures how easily the user can understand the answer, including structure, language and readability.
+3. Exhaustiveness: Evaluates whether the response thoroughly addresses all critical points of the request.
+[/CRITERIA]
+
+
+[EVALUATION INSTRUCTIONS]
+For each metric, return a score between 1 to 5 and a description explaining your notation. The score 1 is the lowest and 5 the higgest.
+[/EVALUATION INSTRUCTIONS]
+
+
+[TO EVALUATE]
+
+'question': {{ question }}
+
+
+'expected_answer': {{ expected_answer }}
+
+
+'model_output': {{ model_output }}
+
+[/TO EVALUATE]
