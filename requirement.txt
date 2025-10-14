@@ -4,3 +4,5 @@ langchain
 langfuse
 langchain-core
 jinja2
+chromadb
+pandas
